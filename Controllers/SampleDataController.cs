@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using RB.FacilityConfig.Client;
 
 namespace aa.Controllers
 {
@@ -40,5 +41,20 @@ namespace aa.Controllers
                 }
             }
         }
+
+
+
+
+        [Route("api/Facility")]
+        public async Task<IActionResult> GetFacilityList()
+        {
+            IFacilityConfigurationClient fc = new FacilityConfigurationClient(new Uri("http://facilityconfigurationservice.devint.dev-r5ead.net"));
+
+            var facilities = await fc.GetAllFacilities();
+
+            return Ok(facilities);
+        }
+
+
     }
 }

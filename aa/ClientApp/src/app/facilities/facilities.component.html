@@ -1,0 +1,22 @@
+<h1>facilities</h1>
+
+<p>get some facilities</p>
+
+<p *ngIf="!facilities"><em>Loading...</em></p>
+
+<table class='table' *ngIf="facilities">
+  <thead>
+    <tr>
+      <th>facility id</th>
+      <th>active</th>
+      <th>facility name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let facility of facilities">
+      <td>{{ facility.facilityId }}</td>
+      <td>{{ facility.active }}</td>
+      <td>{{ facility.facilityName }}</td>
+    </tr>
+  </tbody>
+</table>

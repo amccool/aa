@@ -10,14 +10,14 @@ export class FacilitiesComponent {
   public facilities: Facility[];
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-    http.get<Facility[]>(baseUrl + 'api/Facility/FacilitiesList').subscribe(result => {
+    http.get<Facility[]>(baseUrl + 'api/Facility/FacilityList').subscribe(result => {
       this.facilities = result;
     }, error => console.error(error));
   }
 }
 
 interface Facility {
-  FacilityId: string;
-  Active: boolean;
-  FacilityName: string;
+  facilityId: string;
+  active: boolean;
+  facilityName: string;
 }

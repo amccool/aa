@@ -41,20 +41,5 @@ namespace aa.Controllers
                 }
             }
         }
-
-
-
-
-        [Route("api/Facility")]
-        public async Task<IActionResult> GetFacilityList()
-        {
-            IFacilityConfigurationClient fc = new FacilityConfigurationClient(new Uri("http://facilityconfigurationservice.devint.dev-r5ead.net"));
-
-            var facilities = await fc.GetAllFacilities();
-
-            return Ok(facilities);
-        }
-
-
     }
 }

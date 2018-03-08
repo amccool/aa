@@ -1,0 +1,9 @@
+C:\Users\alexm\source\repos\aa\ORLCient\obj\Debug\netstandard2.0\ORLCient.csproj.CoreCompileInputs.cache
+C:\Users\alexm\source\repos\aa\ORLCient\obj\Debug\netstandard2.0\ORLCient.AssemblyInfoInputs.cache
+C:\Users\alexm\source\repos\aa\ORLCient\obj\Debug\netstandard2.0\ORLCient.AssemblyInfo.cs
+C:\Users\alexm\source\repos\aa\ORLCient\bin\Debug\netstandard2.0\ORLCient.deps.json
+C:\Users\alexm\source\repos\aa\ORLCient\bin\Debug\netstandard2.0\ORLCient.dll
+C:\Users\alexm\source\repos\aa\ORLCient\bin\Debug\netstandard2.0\ORLCient.pdb
+C:\Users\alexm\source\repos\aa\ORLCient\obj\Debug\netstandard2.0\ORLCient.csprojResolveAssemblyReference.cache
+C:\Users\alexm\source\repos\aa\ORLCient\obj\Debug\netstandard2.0\ORLCient.dll
+C:\Users\alexm\source\repos\aa\ORLCient\obj\Debug\netstandard2.0\ORLCient.pdb

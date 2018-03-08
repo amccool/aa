@@ -1,0 +1,24 @@
+﻿<ClientConfiguration xmlns="urn:orleans">
+
+  <SystemStore SystemStoreType ="SqlServer"
+               DeploymentId="__DeploymentId__"
+               DataConnectionString="Server=__SQLServerInstanceConnectionString__;Database=Orleans;User ID=orleans;password=orleans;" />
+
+  <GatewayProvider ProviderType="SqlServer"/>
+
+  <StreamProviders>
+    <Provider Type="Orleans.Providers.Streams.SimpleMessageStream.SimpleMessageStreamProvider" Name="SMSProvider" FireAndForgetDelivery="false"/>
+  </StreamProviders>
+
+  <Tracing
+    DefaultTraceLevel="Info"
+    TraceToFile="{2}-{0}-{1}.log"
+    TraceToConsole="true"
+  >
+    <TraceLevelOverride LogPrefix="Runtime" TraceLevel="Info" />
+    <TraceLevelOverride LogPrefix="Grain" TraceLevel="Info" />
+    <TraceLevelOverride LogPrefix="Application" TraceLevel="Info" />
+    <TraceLevelOverride LogPrefix="Provider" TraceLevel="Info" />
+  </Tracing>
+
+</ClientConfiguration>

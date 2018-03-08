@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Orleans;
+using Orleans.Runtime.Configuration;
+using Outreach.ESLogger;
 
 namespace aa
 {
@@ -33,6 +36,9 @@ namespace aa
                 options.AuthenticationDisplayName = "sgsdgsgsgsg";
                 //options.AutomaticAuthentication = false;
             });
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
